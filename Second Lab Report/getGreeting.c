@@ -1,5 +1,4 @@
 // Enter integer hour value and Display the Greeting:
-// hour Format is 24
 #include <stdio.h>
 int main()
 {
