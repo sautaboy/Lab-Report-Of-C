@@ -7,20 +7,19 @@ int main()
     scanf("%d %d", &firstNumber, &secondNumber);
     if (firstNumber % 2 == 0)
     {
-        printf("The First Number is Even\n");
-        if (secondNumber % 10 == 0)
-        {
-            printf("Second Number is Divisible By 10\n");
-        }
-        else
-        {
-            printf("Second Number Cannot Be Divisible By 10\n");
-        }
+        printf(" First Number is Even\n");
     }
     else
     {
-
-        printf("The First Number is Odd");
+        printf(" First Number is Odd\n");
+    }
+    if (secondNumber % 10 == 0)
+    {
+        printf("Second Number is Divisible By 10\n");
+    }
+    else
+    {
+        printf("Second Number Cannot Be Divisible by 10\n");
     }
     return 0;
 }
