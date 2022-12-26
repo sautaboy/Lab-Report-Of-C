@@ -6,31 +6,38 @@ int main()
     int hourValue;
     printf("Enter a Hour Value\n");
     scanf("%d", &hourValue);
-    if (hourValue < 12)
+    if (hourValue<12)
     {
-        printf("Hello, Goodd Morning!");
+        printf("Good Morning");
     }
     else
     {
-        if (hourValue >= 12 && hourValue < 16)
+        if (hourValue >= 12 && hourValue <= 16)
         {
-            printf("Hello, Good Afternoon!");
+            printf("Good Afternoon");
         }
         else
         {
-            if (hourValue >= 16 && hourValue < 22)
+            if (hourValue > 16 && hourValue <= 20)
             {
-                printf("Hello, Good Evening!");
+                printf("Good Evening");
             }
             else
             {
-                if (hourValue > 22 && hourValue <= 4)
+                if (hourValue > 20 && hourValue < 24)
                 {
-                    printf("Good Night!");
+                    printf("Good Night");
                 }
                 else
                 {
-                    printf("Out Of Universe Time");
+                    if (hourValue == 24)
+                    {
+                        printf("Good Morning");
+                    }
+                    else
+                    {
+                        printf("Out Of Gmt Time");
+                    }
                 }
             }
         }
